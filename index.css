@@ -1,0 +1,94 @@
+body { 
+    background: url("imgs/leaf.jpg"); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    margin: 0; 
+    padding: 0; 
+}
+
+.rain {
+    height: 100%; 
+    background: url("imgs/rain3.png");
+    background-size: cover; 
+    animation: rain .50s linear infinite; 
+}
+
+@keyframes rain {
+    0% {background-position: 0% 0%}
+    100% {background-position: 10% 100%}
+}
+
+.body {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+   
+#logo {
+    display: grid; 
+    grid-column: 2 / 3; 
+    margin: 30px; 
+   text-align: center; 
+}
+.text {
+    display: grid; 
+    grid-column: 2 / 3; 
+    margin: 30px; 
+    text-align: center; 
+}
+#butt {
+    align-items: center;
+    grid-column: 2 / 3; 
+}
+.butt {
+    align-items: center;
+    grid-column: 2 / 3; 
+}
+h1 {
+    margin: 10px; 
+    color: whitesmoke; 
+    text-align: center;
+    font-size: 4em;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h2 {
+    margin: 10px; 
+    color: whitesmoke; 
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+
+button {
+    color: #444444;
+    background: #F3F3F3;
+    border: 1px #DADADA solid;
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 9pt;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    align-items: center;
+    margin: auto; 
+    width: 150px;
+    height: 50px;
+    border-color: darkgreen;
+
+}
+
+button:hover {
+    box-shadow: 1px 1px 1px #EAEAEA;
+    color: whitesmoke; 
+    background: darkgreen; 
+}
+
+button:active {
+    box-shadow: inset 1px 1px 1px #DFDFDF;   
+}
